@@ -18,7 +18,7 @@ StVK
 
 
 *forceNeighborhoodSize
-5
+10
 
 *substepsPerTimeStep
 1
@@ -42,4 +42,4 @@ StVK
 1.0
 
 *numInternalForceThreads
-11
+20

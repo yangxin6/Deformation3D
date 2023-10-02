@@ -6,16 +6,16 @@
 sudo apt-get install freeglut3-dev
 ```
 
-install
+**install**
 
-python 3.7 +
+python 3.7+
 
 ```bash
 pip install Deformation3D-1.5.2
 #pip install Deformation3D-1.5.2-py3-none-any.whl
 ```
 
-demo 
+**demo** 
 
 ```bash
 python deme.py

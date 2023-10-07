@@ -18,5 +18,5 @@ pip install Deformation3D-1.5.2
 **demo** 
 
 ```bash
-python deme.py
+python demo.py
 ```

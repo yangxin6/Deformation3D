@@ -1,4 +1,4 @@
-# Corn Point Cloud Virtual Deformation Tool
+# Corn Point Cloud Deformation Tool
 
 
 **dependence**
@@ -20,3 +20,8 @@ pip install Deformation3D-1.5.2
 ```bash
 python demo.py
 ```
+
+
+# Reference
+
+- [Vega](https://viterbi-web.usc.edu/~jbarbic/vega/)

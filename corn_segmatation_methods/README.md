@@ -1,11 +1,11 @@
-# 玉米三维点云分割方法
+# Corn 3D point cloud segmentation Models
 
-- 语义分割 PointNet++
-- 实例分割 HAIS
+- Semantic Segmentation: PointNet++
+- Instance Segmentation: HAIS
 
 
 
-# 训练
+# train
 
 **PointNet++**
 
@@ -16,11 +16,10 @@ python corn_train_semseg.py --root {data_root} --batch_size 100 --meta {meta_dir
 **HAIS**
 ```bash
 python train2.py --config config/hais_run1_corn_v2_1_vega_1000_151_bottom_828.yaml  # HAIS
-python train3.py --config config/hais_run1_corn_v2_1_vega_1000_151_bottomc_828_imoprove.yaml  # HAIS+
 ```
 
 
-# 测试
+# test
 
 **PointNet++**
 
@@ -32,8 +31,6 @@ python corn_test_semseg.py --log_dir {logdir} --visual --meta {meta_dir}
 ```bash
 python batch_test3.py --config config/hais_run1_corn_v0.yaml  # HAIS
 python batch_test3_post.py --config config/hais_run1_corn_v0.yaml  # HAIS_DFSP
-python batch_test3_improve.py --config config/hais_run1_corn_v0.yaml  # HAIS+
-python batch_test3_improve_post.py --config config/hais_run1_corn_v0.yaml  # HAIS+_DFSP
 ```
 
 # Results
@@ -46,8 +43,12 @@ python batch_test3_improve_post.py --config config/hais_run1_corn_v0.yaml  # HAI
 
 
 | Model Name | mAP    | stem mAP | leaf mAP | Download                                                                                                                 | Config                                                      |
-| ---------- |--------|----------|----------|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+|------------|--------|----------|----------|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
 | HAIS       | 88.99% | 91.99%   | 85.98%   | model ([Google Drive](https://drive.google.com/file/d/1PhzWIkfW20tyPeXan2b-LfUfXFa_ipnt/view?usp=drive_link) / [百度网盘]()) | [config](hais_run1_corn_v2_1_vega_1000_151_bottom_828.yaml) |
-| HAIS       | 91.52% | 92.37%   | 90.66%   | above                                                                                                                    |                                            [config](hais_run1_corn_v2_1_vega_1000_151_bottom_828.yaml)                 |
-| HAIS+      | 88.98% | 92.07%   | 85.90%   | model ([Google Drive](https://drive.google.com/file/d/1_3GnnfzBzhbiJQi6h96aebt_fYav_fwK/view?usp=drive_link) / [百度网盘]()) | [config](hais_run1_corn_v2_1_vega_1000_151_bottom_828.yaml)                                                  |
-| HAIS+_DFSP | 91.80% | 92.29%   | 91.30%   | above                                                                                                                    |                                                [config](hais_run1_corn_v2_1_vega_1000_151_bottom_828.yaml)              |
+| HAIS_DFSP  | 91.52% | 92.37%   | 90.66%   | above                                                                                                                    |                                            [config](hais_run1_corn_v2_1_vega_1000_151_bottom_828.yaml)                 |
+
+
+# Reference
+
+- [HAIS](https://github.com/hustvl/HAIS)
+- [PointNet](https://github.com/yanx27/Pointnet_Pointnet2_pytorch)

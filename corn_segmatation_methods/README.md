@@ -44,7 +44,7 @@ python batch_test3_post.py --config config/hais_run1_corn_v0.yaml  # HAIS_DFSP
 
 | Model Name | mAP    | stem mAP | leaf mAP | Download                                                                                                                 | Config                                                      |
 |------------|--------|----------|----------|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| HAIS       | 88.99% | 91.99%   | 85.98%   | model ([Google Drive](https://drive.google.com/file/d/1PhzWIkfW20tyPeXan2b-LfUfXFa_ipnt/view?usp=drive_link) / [百度网盘](https://pan.baidu.com/s/13aGQIx8PyXZ1oBD72m_p-Q)) | [config](hais_run1_corn_v2_1_vega_1000_151_bottom_828.yaml) |
+| HAIS       | 88.99% | 91.99%   | 85.98%   | model ([Google Drive](https://drive.google.com/file/d/1PhzWIkfW20tyPeXan2b-LfUfXFa_ipnt/view?usp=drive_link) / [百度网盘](https://pan.baidu.com/s/13aGQIx8PyXZ1oBD72m_p-Q?pwd=syau)) | [config](hais_run1_corn_v2_1_vega_1000_151_bottom_828.yaml) |
 | HAIS_DFSP  | 91.52% | 92.37%   | 90.66%   | above                                                                                                                    |                                            [config](hais_run1_corn_v2_1_vega_1000_151_bottom_828.yaml)                 |
 
 

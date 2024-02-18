@@ -8,10 +8,11 @@ DATA:
   data_root: dataset
   dataset: corn
   data_dir: corn/hais_test/
-#  data_dir: corn/20230828_exp_v2_1_vega_1000_151_bottom_c_p/hais_1000
+#  data_dir: corn/202401204_exp_v2_1_vega_1000_151_bottom_pc_15/hais_500
   filename_suffix: pth
   meta: meta_v2_1_1000/test.txt
-
+#  meta: meta_v2_1-c/test.txt
+#  meta: meta_v2_1-p/test.txt
   classes: 2
   ignore_label: -100
   class_weight: [15.43, 1.0]
@@ -31,7 +32,7 @@ STRUCTURE:
 
 TRAIN:
   epochs: 500
-  train_workers: 20 # data loader workers
+  train_workers: 10 # data loader workers
   optim: Adam # Adam or SGD
   lr: 0.0001
   step_epoch: 200
@@ -72,7 +73,7 @@ TEST:
   test_workers: 24
   test_seed: 567
 
-  using_NMS: True
+  using_NMS: False
   TEST_NMS_THRESH: 0.3
   TEST_SCORE_THRESH: 0.09
   TEST_NPOINT_THRESH: 100

@@ -15,7 +15,7 @@ python corn_train_semseg.py --root {data_root} --batch_size 100 --meta {meta_dir
 
 **HAIS**
 ```bash
-python train2.py --config config/hais_run1_corn_v2_1_vega_1000_151_bottom_828.yaml  # HAIS
+python train2.py --config config/hais_run1_corn_v2_1_vega_1000_151_bottom_828_s_15.yaml  # HAIS
 ```
 
 
@@ -29,8 +29,8 @@ python corn_test_semseg.py --log_dir {logdir} --visual --meta {meta_dir}
 
 **HAIS**
 ```bash
-python batch_test3.py --config config/hais_run1_corn_v0.yaml  # HAIS
-python batch_test3_post.py --config config/hais_run1_corn_v0.yaml  # HAIS_DFSP
+python batch_test3.py --config config/hais_run1_corn_v2_1_vega_1000_151_bottom_828_s_15.yaml  # HAIS
+python batch_test3_post_v2.py --config config/hais_run1_corn_v2_1_vega_1000_151_bottom_828_s_15.yaml  # HAIS_DFSP
 ```
 
 # Results
@@ -38,14 +38,14 @@ python batch_test3_post.py --config config/hais_run1_corn_v0.yaml  # HAIS_DFSP
 
 | Model Name | mIoU   | stem mIoU | leaf mIoU | Download  |
 | ---------- |--------|-----------|-----------|-----------|
-| PointNet++ | 94.66% | 89.98%    | 99.33%    | model ([Google Drive](https://drive.google.com/file/d/1yIWNWB7HUMAEgDKF9AkaSs3ayT1DE__S/view?usp=drive_link) / [百度网盘](https://pan.baidu.com/s/1KbfWoHkkYyp_JxYFxm_ISA?pwd=syau)) |
+| PointNet++ | 91.93% | 85.04%    | 98.82%    | model ([Google Drive](https://drive.google.com/file/d/1z1uBRdiG271mMcnbmPJDyX6IYbYM_4zo/view?usp=drive_link) / [百度网盘](https://pan.baidu.com/s/1KbfWoHkkYyp_JxYFxm_ISA?pwd=syau)) |
 
 
 
-| Model Name | mAP    | stem mAP | leaf mAP | Download                                                                                                                 | Config                                                      |
-|------------|--------|----------|----------|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| HAIS       | 88.99% | 91.99%   | 85.98%   | model ([Google Drive](https://drive.google.com/file/d/1PhzWIkfW20tyPeXan2b-LfUfXFa_ipnt/view?usp=drive_link) / [百度网盘](https://pan.baidu.com/s/13aGQIx8PyXZ1oBD72m_p-Q?pwd=syau)) | [config](hais_run1_corn_v2_1_vega_1000_151_bottom_828.yaml) |
-| HAIS_DFSP  | 91.52% | 92.37%   | 90.66%   | above                                                                                                                    |                                            [config](hais_run1_corn_v2_1_vega_1000_151_bottom_828.yaml)                 |
+| Model Name | mAP    | stem mAP | leaf mAP | Download                                                                                                                 | Config                                                                       |
+|------------|--------|----------|----------|--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| HAIS       | 89.57% | 93.32%   | 85.83%   | model ([Google Drive](https://drive.google.com/file/d/1mn2dmBistMJWZF4jcpg-hXHRqQ1Erxbe/view?usp=drive_link) / [百度网盘](https://pan.baidu.com/s/13aGQIx8PyXZ1oBD72m_p-Q?pwd=syau)) | [config](HAIS/config/hais_run1_corn_v2_1_vega_1000_151_bottom_828_s_15.yaml) |
+| HAIS_DFSP  | 93.74% | 92.97%   | 94.44%   | above                                                                                                                    | [config](HAIS/config/hais_run1_corn_v2_1_vega_1000_151_bottom_828_s_15.yaml)                  |
 
 
 # Reference

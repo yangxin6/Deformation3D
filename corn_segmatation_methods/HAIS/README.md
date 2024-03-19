@@ -1,7 +1,11 @@
 
-cuda 11.8
 
-spconv 2
+# 环境搭建
+HAIS
+
+- cuda 11.8
+
+- spconv cu117
 
 ```bash
 conda create -n hais python=3.8

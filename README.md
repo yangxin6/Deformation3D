@@ -11,7 +11,7 @@ sudo apt-get install freeglut3-dev
 python 3.8+
 
 ```bash
-pip install Deformation3D==1.7.8
+pip install deformation3d==1.8.1
 ```
 
 **demo** 
